@@ -26,8 +26,7 @@
     "node": ">= 14"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.6.8",
-    "spi-device": "^3.0.0"
+    "@iobroker/adapter-core": "^2.6.8"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^3.5.9",
