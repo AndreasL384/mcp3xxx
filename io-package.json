@@ -1,0 +1,132 @@
+{
+    "common": {
+        "name": "mcp3xxx",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Analog inputs MCP3XXX",
+        "titleLang": {
+            "en": "Analog inputs MCP3XXX",
+            "de": "Analogeingänge MCP3XXX",
+            "ru": "Аналоговые входы MCP3XXX",
+            "pt": "Entradas analógicas MCP3XXX",
+            "nl": "Analoge ingangen MCP3XXX",
+            "fr": "Entrées analogiques MCP3XXX",
+            "it": "Ingressi analogici MCP3XXX",
+            "es": "Entradas analógicas MCP3XXX",
+            "pl": "Wejścia analogowe MCP3XXX",
+            "zh-cn": "模拟输入 MCP3XXX"
+        },
+        "desc": {
+            "en": "Read analog inputs using MCP3XXX chip with SPI interface",
+            "de": "Lesen Sie analoge Eingänge mit dem MCP3XXX-Chip mit SPI-Schnittstelle",
+            "ru": "Чтение аналоговых входов с использованием микросхемы MCP3XXX с интерфейсом SPI",
+            "pt": "Leia as entradas analógicas usando o chip MCP3XXX com interface SPI",
+            "nl": "Lees analoge ingangen met MCP3XXX-chip met SPI-interface",
+            "fr": "Lire les entrées analogiques à l'aide de la puce MCP3XXX avec interface SPI",
+            "it": "Leggi gli ingressi analogici utilizzando il chip MCP3XXX con interfaccia SPI",
+            "es": "Lea entradas analógicas utilizando el chip MCP3XXX con interfaz SPI",
+            "pl": "Odczyt wejść analogowych za pomocą układu MCP3XXX z interfejsem SPI",
+            "zh-cn": "使用带 SPI 接口的 MCP3XXX 芯片读取模拟输入"
+        },
+        "authors": [
+            "AndreasL384 <andreas@tg00.de>"
+        ],
+        "keywords": [
+            "mcp3002",
+            "bmcp3004",
+            "mcp3008",
+            "mcp3202",
+            "mcp3204",
+            "mcp3208",
+            "analog",
+            "spi"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "mcp3xxx.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/AndreasL384/ioBroker.mcp3xxx/main/admin/mcp3xxx.png",
+        "readme": "https://github.com/AndreasL384/ioBroker.mcp3xxx/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "hardware",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json",
+            "tab": "materialize"
+        },
+        "adminTab": {
+            "singleton": true,
+            "name": {
+                "en": "Analog inputs MCP3XXX",
+                "de": "Analogeingänge MCP3XXX",
+                "ru": "Аналоговые входы MCP3XXX",
+                "pt": "Entradas analógicas MCP3XXX",
+                "nl": "Analoge ingangen MCP3XXX",
+                "fr": "Entrées analogiques MCP3XXX",
+                "it": "Ingressi analogici MCP3XXX",
+                "es": "Entradas analógicas MCP3XXX",
+                "pl": "Wejścia analogowe MCP3XXX",
+                "zh-cn": "模拟输入 MCP3XXX"
+            },
+            "link": "",
+            "fa-icon": "info"
+        },
+        "supportCustoms": true,
+        "eraseOnUpload": true,
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}

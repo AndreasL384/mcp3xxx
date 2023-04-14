@@ -1,0 +1,46 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "mcp3xxx",
+    "title": "Analog inputs MCP3XXX",
+    "description": "Read analog inputs using MCP3XXX chip with SPI interface",
+    "keywords": [
+        "MCP3004 MCP3008"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [
+        "tab",
+        "custom"
+    ],
+    "type": "hardware",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "language": "JavaScript",
+    "nodeVersion": "14",
+    "adminUi": "json",
+    "tabReact": "yes",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "releaseScript": "yes",
+    "devServer": "yes",
+    "devServerPort": 8081,
+    "indentation": "Space (4)",
+    "quotes": "double",
+    "es6class": "yes",
+    "authorName": "AndreasL384",
+    "authorGithub": "AndreasL384",
+    "authorEmail": "andreas@tg00.de",
+    "gitRemoteProtocol": "HTTPS",
+    "gitCommit": "no",
+    "defaultBranch": "main",
+    "license": "MIT License",
+    "dependabot": "no",
+    "creatorVersion": "2.3.0"
+}
