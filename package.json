@@ -9,8 +9,14 @@
   "homepage": "https://github.com/AndreasL384/ioBroker.mcp3xxx",
   "license": "MIT",
   "keywords": [
-    "MCP3004",
-    "MCP3008"
+    "mcp3002",
+    "mcp3004",
+    "mcp3008",
+    "mcp3202",
+    "mcp3204",
+    "mcp3208",
+    "analog",
+    "spi"
   ],
   "repository": {
     "type": "git",
